@@ -1,8 +1,14 @@
 import pandas as pd
 import ast_exportersa
-class MyClass(test):
 
-    something = 4
+class Test:
+    def do_something(a):
+        print('another test')
+
+
+class MyClass(Test):
+
+
     def __init__(self, classValue):
         print("hi")
         self.classValue = 1
