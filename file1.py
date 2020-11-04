@@ -6,12 +6,19 @@ file2Alias.File2Class.print_file2_class()
 
 File2Class.print_file2_class()
 
+file2Alias.outside_call()
+
 class File1Class:
+
+    file2Alias.File2Class.print_file2_class()
 
     def file1method():
         File2Class.print_file2_class()
+        file2Alias.outside_call()
+        file2Alias.File2Class.print_file2_class()
 
 
-if __name__ == '__main__':
-    File1Class.file1method()
+    file2Alias.outside_call()
+    File2Class.print_file2_class()
+
     
