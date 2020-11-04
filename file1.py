@@ -1,8 +1,11 @@
+import folder.file2
 import folder.file2 as file2Alias
-from folder.file2 import File2Class
+from folder.file2 import File2Class, File2Class2 as Pepino
 
 file2Alias.File2Class.print_file2_class()
+Pepino.print_file2_class()
 
+folder.file2.File2Class.print_file2_class()
 
 File2Class.print_file2_class()
 
