@@ -58,7 +58,7 @@ async def foo1(param):
 
 await foo1(None)
 (1,2)
-def foo2(*param):
+def foo2(holi, *param, adior):
     try:
         raise BaseException
     except BaseException:
