@@ -4,9 +4,11 @@ import ast_exportersa
 class Test:
     def do_something(a):
         print('another test')
+class Test2:
+    def do_something(a):
+        print('another test')
 
-
-class MyClass(Test):
+class MyClass(Test, Test2):
 
 
     def __init__(self, classValue):
