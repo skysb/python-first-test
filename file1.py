@@ -23,7 +23,7 @@ class File1Class:
     file2Alias.File2Class.print_file2_class()
     file2Alias.outside_call()
     File2Class.print_file2_class()
-    
+
     def file1method():
         
         outside_call()
@@ -33,5 +33,14 @@ class File1Class:
         file2Alias.File2Class.print_file2_class()
 
 
+class File1Class2(folder.file2.File2Class):
+    def file1class2method():
+        print("hi")
+
+    
+
+class File1Class3(Pepino):
+    def file1class2method():
+        print("hi")
 
     
