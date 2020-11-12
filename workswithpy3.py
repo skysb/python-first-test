@@ -1,7 +1,9 @@
+#workswithpy3
 import pandas as pd
 import ast_exportersa
 t[...,1:]
 
+        
 class Test:
     def do_something(a):
         print('another test')
@@ -47,7 +49,7 @@ else:
     print("whatever")
     
 #Ann Assign
-# foo : int = 42
+foo : int = 42
 {1:2}
 {0, 1, 2}
 {s for s in [1, 2, 1, 0]}
@@ -56,26 +58,28 @@ del MyClass
 sum(x*x for x in range(10)) #generator expressions
 
 
-def foo1(param):
+async def foo1(param):
     assert param, "fail"
 
-foo1(None)
+await foo1(None)
 (1,2)
-def foo2(holi, *param):
+def foo2(holi, *param, adior):
     try:
         raise BaseException
     except BaseException:
-        print "found it not stopping now"
+        print("found it not stopping now")
 
 #if expression
 a if b else c
 'hello'*3
 
 def iterable1():
-    print "iterable1 it not stopping now"
+    yield 1
+    yield 2
 
 def iterable2():
-    print "iterable2 it not stopping now"
+    yield from iterable1()
+    yield 3
 
 t[1:'this':t] #slicing
 

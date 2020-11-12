@@ -59,7 +59,7 @@ else:
     print("whatever")
     
 #Ann Assign
-foo : int = 42
+# foo : int = 42
 {1:2}
 {0, 1, 2}
 {s for s in [1, 2, 1, 0]}
@@ -68,28 +68,26 @@ del MyClass
 sum(x*x for x in range(10)) #generator expressions
 
 
-async def foo1(param):
+def foo1(param):
     assert param, "fail"
 
-await foo1(None)
+foo1(None)
 (1,2)
-def foo2(holi, *param, adior):
+def foo2(holi, *param):
     try:
         raise BaseException
     except BaseException:
-        print("found it not stopping now")
+        print "found it not stopping now"
 
 #if expression
 a if b else c
 'hello'*3
 
 def iterable1():
-    yield 1
-    yield 2
+    print "iterable1 it not stopping now"
 
 def iterable2():
-    yield from iterable1()
-    yield 3
+    print "iterable2 it not stopping now"
 
 t[1:'this':t] #slicing
 
