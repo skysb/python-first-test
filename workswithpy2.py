@@ -2,6 +2,18 @@ import pandas as pd
 import ast_exportersa
 t[...,1:]
 
+exec('a = 5\nb=10\nprint("Sum =", a+b)')
+
+def divide(x, y):
+    try:
+        result = x / y
+    except ZeroDivisionError:
+        print "division by zero!"
+    else:
+        print "result is", result
+    finally:
+        print "executing finally clause"
+        
 class Test:
     def do_something(a):
         print('another test')
