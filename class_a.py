@@ -6,3 +6,11 @@ class myclass(object):
     def dosomething(self):
         print("hello world")
     
+def somethingelse():
+    print("printing something else")
+
+def anythingelse():
+    print("printing anything else")
+
+
+    
